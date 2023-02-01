@@ -1,0 +1,128 @@
+.modal {
+  display: flex; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  width: 800px;
+  height: 600px;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #fffcf5;
+  border-radius: 5px;
+  position: relative;
+  animation: animate 0.4s;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.modal > h1 {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-size: 35px;
+}
+
+.modal-container {
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 40px;
+}
+
+.modal-image {
+  display: flex;
+  width: 600px;
+  height: 650px;
+  overflow-x: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(128, 128, 128); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c0b2a0; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #756f66; 
+}
+
+
+.modal-img {
+width: 100%;
+height: 100%;
+margin: 0 15px 0 0;
+}
+
+.modal-detail {
+  margin: 30px 30px;
+}
+
+.modal button {
+  position: absolute;
+  top: 20px;
+  right: 23px;
+  width: 37px;
+  padding: 8px 11px;
+  background-color: #6d614f;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+@keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .modal {
+    width: 600px;
+  }
+  .modal > h1 {
+    font-size: 30px;
+    left: 27px;
+    top: 5px;
+  }
+  .modal-image {
+    width: 530px;
+    height: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .modal {
+    width: 320px; 
+  }
+  .modal > h1 {
+    font-size: 23px;
+  }
+  .modal-container {
+    top: 45px;
+    padding: 20px;
+  }
+  .modal-image {
+    width: 280px;
+    height: 100%;
+   }
+}

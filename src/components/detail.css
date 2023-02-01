@@ -1,0 +1,280 @@
+#detail-page {
+  font-family: 'Quicksand', sans-serif;
+  padding: 2rem;
+  background-color: #fffcf5;
+  color: #4a453e;
+}
+
+#detail-line {
+  display: block;
+  border-bottom: 3px solid rgb(219, 202, 180);
+  height: 25px;
+  width: 95%;
+  margin: 0 2.5%;
+}
+
+.detail-nav {
+  position: relative;
+  left: 2.3rem;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.detail-nav button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #4a453e;
+}
+
+.detail-nav button:hover {
+  color: #916f47;
+  transform: scale(1.07) ;
+  transition: all 0.2s ease-in-out;
+}
+
+#project-name {
+  font-family: 'Caveat', sans-serif;
+  font-size: 7rem;
+  text-align: center;
+  width: 89%;
+  margin: 0 2rem 0.5rem 2rem;
+}
+
+#project-headline {
+  text-align: center;
+  width: 60%;
+  margin: 0 18%;
+}
+
+.detail-core {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 2rem;
+}
+
+.detail-img {
+  width: 35rem;
+  margin: 20px;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.detail-writing {
+  width: 35rem;
+  margin: 0 20px 20px 20px;
+  height: 325px;
+}
+
+.features {
+  font-family: 'Caveat', sans-serif;
+  font-size: 1.9rem;
+  margin: 0;
+}
+
+.detail-writing ul {
+  margin: 5px;
+  font-size: 1.1rem;
+}
+
+.detail-writing ul li::marker {
+  content: attr(data-emoji);
+}
+
+#learned {
+  margin-top: 10px;
+}
+
+#learned-detail {
+  margin: 5px 10px;
+  font-size: 1.1rem;
+}
+
+.detail-git {
+  font-family: 'Caveat', sans-serif;
+  font-size: 1.6rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  transition: transform ease 0.3s;
+}
+
+#github {
+  width: 40px;
+}
+
+.detail-git:hover {
+  color: #916f47;
+  transform:scale(1.1);
+}
+
+#skills-header {
+  font-family: 'Caveat', sans-serif;
+  font-size: 4rem;
+  width: 21%;
+  margin: 40px auto 0 auto;
+}
+
+.detail-skills {
+  width: 70%;
+  margin: 10px auto;
+  background-color: rgb(228, 219, 207);
+  border-radius: 500px;
+}
+
+.skills {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills img {
+  width: 60px;
+  height: 60px;
+  margin: 5px auto;
+}
+
+.detail-video {
+  width: 86%;
+  padding: 40px 0 20px 0px;
+  margin: auto;
+}
+
+
+#video-header {
+  font-family: 'Caveat', sans-serif;
+  font-size: 5rem;
+  width: 73%;
+  margin: 10px auto 30px auto;
+}
+
+.detail-video video {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  #project-name {
+    font-size: 6rem;
+    width: auto;
+    margin: 0 auto;
+  }
+  #project-headline {
+    font-size: 1.3rem;
+  }
+  #skills-header {
+    font-size: 3rem;
+  }
+  #video-header {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .detail-core {
+    flex-direction: column;
+    width: auto;
+    margin: 0 auto;
+  }
+  #video-header {
+    width: 560px;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #project-name {
+    font-size: 5rem;
+  }
+  #project-headline {
+    font-size: 1.2rem;
+  }
+  #github {
+    width: 35px;
+  }
+  #skills-header {
+    margin: 10px auto -10px auto;
+  }
+  .skills img {
+    width: 50px;
+    height: 50px;
+  }
+  #video-header {
+    width: auto;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .detail-core {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .detail-img {
+    width: auto;
+  }
+  .project-image {
+    width: 100%;
+  }
+  .detail-writing {
+    width: auto;
+    margin: 0 auto 50px auto;
+  }
+  .detail-writing ul {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #detail-page {
+    padding: 0.7rem;
+  }
+  #project-name {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  #project-headline {
+    font-size: 1.1rem;
+    width: auto;
+    margin: 0 10%;
+  }
+  .detail-git {
+    width: auto;
+    margin: 10px 20%;
+  }
+  #skills-header {
+    font-size: 2.2rem;
+  }
+  #video-header {
+    margin: 10px 0;
+    font-size: 2.1rem;
+  }
+  .skills img {
+    width: 38px;
+    height: 38px;
+  }
+  .detail-video {
+    padding: 5px 0px 20px 0;
+  }
+  .skills-group {
+    height: auto;
+    margin: 130px auto 0 auto;
+  }
+  .detail-git {
+    font-size: 1.3rem;
+  }
+  #github {
+    width: 30px;
+  }
+}

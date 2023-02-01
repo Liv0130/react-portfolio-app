@@ -1,0 +1,232 @@
+#main-header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  background-color: #fffcf5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#main-header li {
+  margin: 0 1rem;
+}
+
+#main-header li a {
+  color: #4a453e;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+#main-header li .btn:hover {
+  cursor: pointer;
+  color: #916f47;
+}
+
+.left-menu {
+  align-items: center;
+  width: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 5;
+}
+
+/* menu button */
+#menu-btn {
+  display:flex;
+  flex-direction: column;
+  width: 34px;
+  color: #4a453e;
+  margin-top: 0.4rem;
+}
+
+#menu-btn:hover {
+  cursor: pointer;
+}
+
+.h {
+  margin-bottom: 8px;
+  height: 2.5px;
+  background-color: black;
+}
+
+.sub-menu {
+  /* display: none; */
+  height: 100%; /* 100% Full-height */
+  width: 0;  /* width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #4a453e; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sub-menu ul {
+  padding: 0 20px;
+}
+
+/* The navigation menu links */
+.sub-menu a {
+  padding: 13px 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #fffcf5;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sub-menu a:hover {
+  color: #ccaa7c;
+}
+
+.tooltip-area {
+  position: relative;
+}
+
+/* tolltip for new tab */
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 13;
+  width: 150px;
+  height: 9px;
+  color: #674f2f;
+  font-size: 16.5px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(240, 234, 224);
+  border-radius: 10px;
+  padding: 8px 8px;
+}
+
+.tooltip-area:hover .tooltip-text {
+  visibility: visible;
+}
+
+#bottom {
+  top: 40px;
+  left: -4px;
+}
+
+/* Position and style the close button (top right corner) */
+.sub-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+.sub-menu .closebtn:hover {
+  color: #ccaa7c;
+}
+
+#home {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #4a453e;
+  text-transform: uppercase;
+}
+
+#home:hover {
+  cursor: pointer;
+  color: #916f47;
+  margin: 0;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: right;
+  width: 20%;
+}
+
+#olivia {
+  font-family: 'Caveat', sans-serif;
+  font-size: 3rem;
+  cursor: default;
+}
+
+.right-menu{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(29, 26, 27);
+  position: fixed;
+  top: 0;
+  display: none;
+}
+
+.hide-show {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .main-logo {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  ul.right-menu {
+    display: none;
+  }
+  #main-header {
+    padding: 0;
+  }
+  .hide-show {
+    display: block;
+  }
+  .main-logo {
+    width: 140px;
+    padding-left: 0;
+    padding-right: 180px;
+  }
+  #olivia {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #menu-btn {
+    width: 28px;
+    margin-left: 8px;
+  }
+  .sub-menu {
+    padding-top: 50px; /* Place content 60px from the top */
+  }
+  .sub-menu a {
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+  .main-logo {
+    width: auto;
+    padding-left: 0;
+    padding-right: 110px;
+  }
+  #olivia {
+    font-size: 2.3rem;
+  }
+  .left-menu {
+    width: 7rem;
+    justify-content: unset;
+    margin-left: 15px;
+  }
+  #home {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}

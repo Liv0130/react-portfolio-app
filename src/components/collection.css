@@ -1,0 +1,73 @@
+.collection {
+  font-family: 'Quicksand', sans-serif;
+  padding: 1rem 3rem;
+  background-color: #fffcf5;
+  color: #4a453e;
+}
+
+.collection-intro {
+  padding: 0 5rem;
+}
+
+#collection-title {
+  font-family: 'Caveat', sans-serif;
+  font-size: 7rem;
+  font-weight: lighter;
+  margin: 1rem 0 0 0;
+}
+
+#collection-subtitle {
+  font-family: 'Caveat', sans-serif;
+  font-size: 2.5rem;
+  margin: 0 10px;
+}
+
+.explanation {
+  font-size: 1.2rem;
+  margin: 10px 20px;
+}
+
+.collectioncards-area {
+  display: flex;
+  justify-content: center;
+  width: 84%;
+  margin: 0 auto;
+}
+
+.collection-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 0 0 0;
+  width: 100%;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .collection-intro {
+    width: auto;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #collection-title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .collection {
+    padding: 0 5%;
+    text-align: center;
+  }
+  #collection-title {
+    font-size: 3rem;
+    margin: 0;
+  }
+  #collection-subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .collection-cards {
+    margin: 0 auto;
+  }
+}

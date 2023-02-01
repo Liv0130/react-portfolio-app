@@ -1,0 +1,128 @@
+#making {
+  font-family: 'Quicksand', sans-serif;
+  padding: 2rem;
+  background-color: #fffcf5;
+  color: #4a453e;
+}
+
+#making-head {
+  text-align: center;
+  font-family: 'Caveat', sans-serif;
+  font-size: 6rem;
+  margin: 2rem 0 0 0;
+}
+
+#making-subhead {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+#making-subhead > h2 {
+  font-size: 2rem;
+  margin: 30px;
+  font-weight: 400;
+}
+
+/* modal */
+.myImg {
+  /* width: 20rem; */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImg:hover {
+  opacity: 0.7;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+      width: 100%;
+  }
+}
+
+
+/* --------------------------------- */
+
+
+/* Timeline Container */
+.timeline {
+  /* background: var(--primary-color); */
+  margin: 6rem 30% 0 30%;
+  /* padding: 20px; */
+}
+
+.myImg {
+  width: 15rem;
+}
+
+#portal .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 450px) {
+  #making {
+    padding: 0;
+    width: auto;
+    margin: 0 auto;
+  }
+  #making-head {
+    font-size: 3rem;
+    margin: 0;
+  }
+  #making-subhead {
+    font-size: 1.1rem;
+  }
+  #making-subhead h2 {
+    font-size: 1.5rem;
+    margin: 16px;
+  }
+  .timeline {
+    margin: 10px 10% 0 10%;
+    padding-bottom: 30px;
+  }
+  .making-order {
+    font-size: 1.5rem;
+  }
+}
