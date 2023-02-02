@@ -48,8 +48,8 @@ export default function AboutMe() {
               Accomplished 7 online courses in 2 years
             </h2>
             <h2 className="sub-title">
-              Digging the code {""}
-              <span className="pointline">until I solve the answer</span>
+              Digging into the code {""}
+              <span className="pointline">until I solve the issue</span>
             </h2>
             <p className="intro-paragraph" id="reverse-p">
               Entry-level Front-end developer with proven error shooting,

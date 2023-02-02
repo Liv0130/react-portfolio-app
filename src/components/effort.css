@@ -71,7 +71,7 @@
   position: relative;
   height: 600px;
   margin: 5% 0;
-  background-color: #333;
+  background-color: #4a453e;
   overflow: hidden;
 }
 .youtube .youtube__area {
@@ -114,7 +114,7 @@
 }
 @media screen and (max-width: 1400px) {
   #headline {
-    margin: 0 19%;
+    margin: 0 21%;
   }
   #headline h1 {
     font-size: 6rem;
@@ -124,19 +124,38 @@
     width: 270px;
     padding: 10px 30px;
   }
+  .youtube {
+    height: 400px;
+    margin: 2% 0;
+    background-color: transparent;
+  }
+  .youtube .youtube__area {
+    width: 70%;
+    height: 100%;
+    left: 13%;
+    /* based on Full HD */
+    margin: 0% auto;
+    top: 8%;
+  }
 }
 @media screen and (max-width: 1200px) {
   #headline {
-    margin: 0 10%;
+    margin: 0 12%;
   }
   #headline h1 {
     font-size: 6rem;
     font-weight: 400;
   }
 }
+@media screen and (max-width: 940px) {
+  #headline h1 {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+}
 @media screen and (max-width: 750px) {
   #headline {
-    margin: 0 5%;
+    margin: 0 7%;
   }
   #headline h1 {
     font-size: 4rem;
@@ -151,11 +170,28 @@
 }
 
 @media screen and (max-width: 450px) {
+  .effort {
+    padding: 0.7rem 0;
+  }
   #headline {
-    margin: 0 13%;
+    margin: 0 15%;
   }
   #headline h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 400;
+  }
+  .youtube {
+    height: 200px;
+    margin: 2% auto;
+  }
+  .youtube .youtube__area {
+    width: 70.5%;
+    height: 98%;
+    /* based on Full HD */
+    margin: 0% 1.3%;
+    top: 8%;
+  }
+  .effort-detail {
+    font-size: 1.07rem;
   }
 }

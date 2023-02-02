@@ -13,6 +13,7 @@ import Contact from "./components/Contact.jsx";
 import Making from "./components/Making.jsx";
 import Detail from "./components/Detail";
 import collectionCardData from "./data/collectionCardData";
+import NotFound from "./components/errors/NotFound";
 
 function App() {
   const [projects, setProjects] = useState(collectionCardData);
@@ -36,6 +37,7 @@ function App() {
     <>
       <Header />
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />}></Route>
         <Route path="/aboutme" element={<AboutMe />}></Route>
         <Route path="/collection" element={<Collection />}></Route>

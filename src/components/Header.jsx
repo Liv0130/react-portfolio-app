@@ -48,7 +48,10 @@ export default function Header() {
             </ul>
           </div>
           <a href="/" id="home">
-            Home
+            <span id="home-letter">Home</span>
+            <span id="home-icon" className="material-symbols-outlined">
+              home
+            </span>
           </a>
         </nav>
         <div className="main-logo">
