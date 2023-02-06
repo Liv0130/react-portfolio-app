@@ -57,8 +57,8 @@ export default function Support() {
         <div className="comment-bubble">
           <div id="myComment">
             <p id="comment-mention">
-              Feel free to write any comment about my webpage!
-              <br /> All your comments will help me to enhance my webpage!
+              Feel free to write any comment about my website!
+              <br /> All your comments will help me to improve my website!
             </p>
             <div id="writeBtn" className="chat">
               <div className="background"></div>
