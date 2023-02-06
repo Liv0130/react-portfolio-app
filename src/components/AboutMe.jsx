@@ -1,5 +1,6 @@
 import React from "react";
 import "./aboutme.css";
+import resume from "../resume.pdf";
 
 export default function AboutMe() {
   return (
@@ -34,7 +35,7 @@ export default function AboutMe() {
             </p>
             <a
               className="link-arrow"
-              href="#"
+              href={resume}
               download="Resume(frontend)_Olivia Oh"
             >
               Download Resume -&gt;

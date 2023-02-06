@@ -38,13 +38,28 @@
 
 .video-box {
   width: 350px;
-  height: auto;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #4a453e;
   padding: 10px 30px;
   margin: 10px 30px;
   font-size: 16px;
   border: none;
+  border-radius: 20px;
+  background-color: #f3e8da;
 }
+
+.video-box a:hover {
+  color: #3e372c;
+  -webkit-transform: scale(1.06);
+	transform: scale(1.06);
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
 .video-box p {
   font-size: 1rem;
 }
@@ -52,18 +67,7 @@
 .vlog-img {
   height: 200px;
   width: auto;
-}
-
-/* Zoom In #1 */
-.vlog-img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.vlog-img:hover {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+  padding-top: 10px;
 }
 
 /* YOUTUBE VIDEO */

@@ -1,26 +1,22 @@
 import React, { useState } from "react";
+import axios from "axios";
 export default function SupportPost() {
   const [comment, setComment] = useState();
   const [score, setScore] = useState();
   const timeData = new Date();
-  const year = timeData.getFullYear();
-  const month = timeData.getMonth() + 1;
-  const date = timeData.getDate();
-  const hour = timeData.getHours();
-  const minute = timeData.getMinutes();
-  const second = timeData.getSeconds();
-  const dateFormat = month + "-" + date + "-" + year;
-  const timeFormat = hour + ":" + minute + ":" + second;
-  const time = dateFormat + " (" + timeFormat + ")";
-  async function handleSubmit(e) {
-    const commentMessage = { comment, score, time };
-    await fetch("http://localhost:3001/comments", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(commentMessage),
-    }).then(() => {
-      console.log(commentMessage);
-    });
+  const date = timeData.toLocaleDateString();
+  const time = timeData.toLocaleTimeString();
+  const fullTime = `${date} (${time})`;
+  async function handleSubmit() {
+    const commentMessage = { comment, score, fullTime };
+    await axios
+      .post("http://localhost:5000/create", commentMessage)
+      .then((res) => {
+        console.log("success!");
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
   return (
     <form>

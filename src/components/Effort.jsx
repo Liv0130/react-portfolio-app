@@ -86,8 +86,9 @@ export default function Effort() {
               />
               <p>
                 This video is made around Christmas time. It shows well how hard
-                I tried to balance between study and my close people. It was not
-                easy but I am glad that I could achieve my goals☺️
+                I tried to balance between study and spending time with my close
+                people. It was not easy but I am glad that I could achieve my
+                goals☺️
               </p>
             </a>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 export default function SupportComment({
   id,
   comment,
@@ -12,26 +13,25 @@ export default function SupportComment({
     "⭐️⭐️⭐️⭐️",
     "⭐️⭐️⭐️⭐️⭐️",
   ];
-  function onDelete() {
-    fetch("http://localhost:3001/comments/" + id, {
-      method: "DELETE",
-    }).then(() => {
+  function onDelete(id) {
+    axios.delete(`http://localhost:5000/delete/${id}`).then(() => {
       alert("Successfully Deleted!");
       window.location.reload(false);
     });
   }
   const num = +commentScore;
   const star = stars[num];
+  const formattedDate = new Date(commentDate).toLocaleString();
   return (
     <div className="comment-post-guest">
       <div className="comment-writing">
         <div className="star-area">
           {star}
-          <span>{commentDate}</span>
+          <span>{formattedDate}</span>
         </div>
         <div className="btn-group">
           <p>{comment}</p>
-          <button onClick={onDelete}>
+          <button onClick={() => onDelete(id)}>
             <span className="material-symbols-outlined">delete</span>
           </button>
         </div>

@@ -15,7 +15,7 @@ export default function MakingCard({ data }) {
     <div className="card">
       <div className="info">
         <button onClick={openModal} className="making-order">
-          {data.name}
+          <p>{data.name}</p>
         </button>
         <div className="modal-area">
           {showModal ? <Modal setShowModal={setShowModal} data={data} /> : null}

@@ -28,10 +28,20 @@ a{
   height: 100px;
   position: relative;
   top: 300px;
+  animation-name: floating;
+  animation-duration: 2.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .comment-link:hover {
   color: #916f47;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 17px); }
+  100%   { transform: translate(0, -0px); }   
 }
 
 /* main of site */
@@ -98,6 +108,12 @@ a{
 
 .main-btn:hover {
   color: #916f47;
+}
+@media screen and (min-width: 1600px) {
+  main {
+    padding: 7% 15% 0 19%;
+    gap: 100px;
+  }
 }
 
 @media screen and (max-width: 1000px) {

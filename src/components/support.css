@@ -317,6 +317,9 @@ button span {
   margin: 10px 0;
   justify-content: right;
 }
+.justify-left {
+  justify-content: left;
+}
 
 @media screen and (max-width: 1500px) {
   #support-head {
@@ -353,7 +356,7 @@ button span {
     height: 30rem;
   }
   #navigation-right {
-    left: 73%;
+    left: 75%;
     bottom: 17rem;
   }
   #navigation-left {
@@ -375,7 +378,7 @@ button span {
     margin-bottom: 5rem;
   }
   #navigation-right {
-    left: 70%;
+    left: 74%;
     bottom: 17rem;
   }
   #navigation-left {
@@ -440,5 +443,13 @@ button span {
   .comment-writing {
     height: 150px;
     justify-content: flex-start;
+  }
+  #navigation-right {
+    left: 70%;
+    bottom: 15rem;
+  }
+  #navigation-left {
+    left: 3rem;
+    bottom: 15rem;
   }
 }

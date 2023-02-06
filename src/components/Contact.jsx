@@ -1,47 +1,19 @@
 import React from "react";
 import "./contact.css";
 
-function copyEmail() {
-  // Get the text field
-  const copyText = document.getElementById("email").innerHTML;
-
-  // since I am running this code on developer server
-  async function copyOperation(copyText) {
-    await navigator.clipboard.writeText(copyText);
-    console.log("Copy Success!");
-  }
-  setTimeout(() => {
-    copyOperation(copyText);
-  }, 3000);
-
-  // Copy the text inside the text field
-  // navigator.clipboard.writeText(copyText);
-
-  // Alert the copied text
-  alert("Copied the text: " + copyText);
-}
-
-function copyPhone() {
-  // Get the text field
-  const copyText = document.getElementById("phone").innerHTML;
-
-  // since I am running this code on developer server
-  async function copyOperation(copyText) {
-    await navigator.clipboard.writeText(copyText);
-    console.log("Copy Success!");
-  }
-  setTimeout(() => {
-    copyOperation(copyText);
-  }, 3000);
-
-  // Copy the text inside the text field
-  // navigator.clipboard.writeText(copyText);
-
-  // Alert the copied text
-  alert("Copied the text: " + copyText);
-}
-
 export default function Contact() {
+  const email = "yjjhsh27@gmail.com";
+  const phone = "0700358319";
+  function copyEmail() {
+    navigator.clipboard.writeText(email).then(() => {
+      alert("Successfully Copied Text: " + email);
+    });
+  }
+  function copyPhone() {
+    navigator.clipboard.writeText(phone).then(() => {
+      alert("Successfully Copied Text: " + phone);
+    });
+  }
   return (
     <div id="contact">
       <h1 id="contact-head">Contact</h1>
@@ -66,7 +38,7 @@ export default function Contact() {
             <div className="contact-card">
               <a href="www.linkedin.com/in/Yeonju-Olivia-Oh">Linked In</a>
               <a href="https://my.indeed.com/p/zey58vx">Indeed</a>
-              <a href="#">Job Street</a>
+              <a href="https://github.com/Liv0130">Github</a>
             </div>
           </div>
           <span className="contact-line"></span>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./support.css";
+import axios from "axios";
 import SupportBanner from "./SupportBanner";
 import SupportComment from "./SupportComment";
 import SupportPost from "./SupportPost";
@@ -20,14 +21,15 @@ export default function Support() {
   }
   const [comment, setComment] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3001/comments")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setComment(data);
-      });
+    fetchComments();
   }, []);
+
+  async function fetchComments() {
+    await axios.get("http://localhost:5000/comments").then(async (data) => {
+      const comments = data.data;
+      setComment(comments);
+    });
+  }
 
   return (
     <>
@@ -117,11 +119,11 @@ export default function Support() {
               Any comments will help me to improve my website!
             </div>
           </div>
-          {comment.map((d) => {
+          {comment.map((d, index) => {
             return (
               <SupportComment
-                key={d.id}
-                id={d.id}
+                key={index}
+                id={d._id}
                 comment={d.comment}
                 commentScore={d.score}
                 commentDate={d.time}
