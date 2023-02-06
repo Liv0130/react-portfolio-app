@@ -43,6 +43,7 @@
 @media screen and (max-width: 790px) {
   .notfound {
     padding: 3rem 10rem;
+    height: 50rem;
   }
   .link-group {
     width: 100%;

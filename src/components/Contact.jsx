@@ -36,7 +36,9 @@ export default function Contact() {
           <div className="contact-wrap">
             <h2 className="contact-type">Social Network Account</h2>
             <div className="contact-card">
-              <a href="www.linkedin.com/in/Yeonju-Olivia-Oh">Linked In</a>
+              <a href="https://www.linkedin.com/in/Yeonju-Olivia-Oh">
+                Linked In
+              </a>
               <a href="https://my.indeed.com/p/zey58vx">Indeed</a>
               <a href="https://github.com/Liv0130">Github</a>
             </div>
