@@ -10,7 +10,7 @@ export default function SupportPost() {
   async function handleSubmit() {
     const commentMessage = { comment, score, fullTime };
     await axios
-      .post("http://localhost:5000/create", commentMessage)
+      .post("https://olivia-portfolio-app.herokuapp.com/create", commentMessage)
       .then((res) => {
         console.log("success!");
       })

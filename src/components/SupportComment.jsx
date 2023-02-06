@@ -14,10 +14,12 @@ export default function SupportComment({
     "⭐️⭐️⭐️⭐️⭐️",
   ];
   function onDelete(id) {
-    axios.delete(`http://localhost:5000/delete/${id}`).then(() => {
-      alert("Successfully Deleted!");
-      window.location.reload(false);
-    });
+    axios
+      .delete(`https://olivia-portfolio-app.herokuapp.com/delete/${id}`)
+      .then(() => {
+        alert("Successfully Deleted!");
+        window.location.reload(false);
+      });
   }
   const num = +commentScore;
   const star = stars[num];

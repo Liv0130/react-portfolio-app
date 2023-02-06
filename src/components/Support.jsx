@@ -25,10 +25,12 @@ export default function Support() {
   }, []);
 
   async function fetchComments() {
-    await axios.get("http://localhost:5000/comments").then(async (data) => {
-      const comments = data.data;
-      setComment(comments);
-    });
+    await axios
+      .get("https://olivia-portfolio-app.herokuapp.com/comments")
+      .then(async (data) => {
+        const comments = data.data;
+        setComment(comments);
+      });
   }
 
   return (
