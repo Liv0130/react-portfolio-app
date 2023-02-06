@@ -109,9 +109,9 @@ a{
 .main-btn:hover {
   color: #916f47;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1900px) {
   main {
-    padding: 7% 15% 0 19%;
+    padding: 7% 15%;
     gap: 100px;
   }
 }

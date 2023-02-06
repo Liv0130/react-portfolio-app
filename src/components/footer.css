@@ -74,6 +74,7 @@ footer {
 @media screen and (max-width: 450px) {
   footer {
     padding: 0;
+    width: 100%;
   }
   .footer-menu {
     height: 10px;

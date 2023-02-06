@@ -219,10 +219,11 @@
   .main-logo {
     width: auto;
     padding-left: 0;
-    padding-right: 110px;
+    padding-right: 125px;
   }
   #olivia {
     font-size: 2.3rem;
+    margin: 0;
   }
   .left-menu {
     width: 7rem;

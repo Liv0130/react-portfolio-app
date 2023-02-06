@@ -2,6 +2,7 @@
   background-color: #fffcf5;
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
+  color: #4a453e;
 }
 
 .contact-area {
@@ -146,5 +147,56 @@ a:hover {
   }
   .contact-details {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #contact {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+  }
+  .contact-area {
+    padding: 0;
+  }
+  #contact-head {
+    font-size: 4rem;
+    width: 180px;
+  }
+  #phone {
+    width: 100%;
+  }
+  .icon {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .phone-icon {
+    width: 3.1rem;
+    height: 3.1rem;
+    margin: 12px;
+  }
+  .phone-menu {
+    width: 17.95rem;
+    left: 2.8rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .contact-details {
+    width: 300px;
+  }
+  .contact-type {
+    font-size: 1.8rem;
+  }
+  .contact-btn {
+    padding: 6px 10px;
+    margin-left: 20px;
+  }
+  .contact-wrap {
+    margin: 1.5rem 0;
+  }
+  .contact-card {
+    margin: 20px;
   }
 }

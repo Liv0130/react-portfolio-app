@@ -111,10 +111,11 @@ button:focus {outline:0;}
   outline: none;
   resize: none;
 }
+
 /* select */
 #star {
   position: relative;
-  bottom: 9.8px;
+  bottom: 10px;
   height: 30px;
   /* font-size: 19px; */
   margin-left: 5px;
@@ -432,6 +433,11 @@ button span {
   #comment-text {
     width: 13rem;
   }
+  #post-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   #star {
     width: 95px;
     font-size: 13px;
@@ -441,7 +447,7 @@ button span {
     margin: 0;
   }
   .comment-writing {
-    height: 150px;
+    height: 120px;
     justify-content: flex-start;
   }
   #navigation-right {
@@ -449,7 +455,7 @@ button span {
     bottom: 15rem;
   }
   #navigation-left {
-    left: 3rem;
+    left: 1.7rem;
     bottom: 15rem;
   }
 }
