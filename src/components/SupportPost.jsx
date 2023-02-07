@@ -1,5 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
+
+const checkLength = function () {
+  const area = document.getElementById("comment-text");
+  const message = document.getElementById("textarea-message");
+  const maxLength = 80;
+  if (area.value.length < maxLength) {
+    message.innerHTML = maxLength - area.value.length + " characters remaining";
+  }
+};
+setInterval(checkLength, 300);
+
 export default function SupportPost() {
   const [comment, setComment] = useState();
   const [score, setScore] = useState();
@@ -12,10 +23,10 @@ export default function SupportPost() {
     await axios
       .post("https://olivia-portfolio-app.herokuapp.com/create", commentMessage)
       .then((res) => {
-        console.log("success!");
+        alert("Successfully posted message!");
       })
       .catch((err) => {
-        console.error(err);
+        alert("Unfortunately couldn't post it. Try again later!");
       });
   }
   return (
@@ -27,10 +38,14 @@ export default function SupportPost() {
               id="comment-text"
               className="form-control"
               rows="1"
+              maxLength="80"
               placeholder="Leave a comment here"
               onChange={(e) => setComment(e.target.value)}
               required
             ></textarea>
+            <div className="message-holder">
+              <p id="textarea-message"></p>
+            </div>
           </div>
           <div className="input-group">
             <select

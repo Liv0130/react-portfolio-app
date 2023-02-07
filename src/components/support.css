@@ -95,7 +95,6 @@ button:focus {outline:0;}
 /* textarea + score */
 .post {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100%;
 }
@@ -110,6 +109,21 @@ button:focus {outline:0;}
   font-size: 17px;
   outline: none;
   resize: none;
+  overflow: hidden;
+}
+
+.message-holder {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  bottom: 8px;
+}
+
+#textarea-message {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  text-align: center;
 }
 
 /* select */
@@ -287,7 +301,6 @@ button:focus {outline:0;}
   width: 100%;
   height: 25px;
   display: flex;
-  justify-content:right;
 }
 
 button span {
@@ -433,10 +446,9 @@ button span {
   #comment-text {
     width: 13rem;
   }
-  #post-box {
+  .post {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   #star {
     width: 95px;
@@ -457,5 +469,8 @@ button span {
   #navigation-left {
     left: 1.7rem;
     bottom: 15rem;
+  }
+  .star-area span {
+    margin: 0;
   }
 }
