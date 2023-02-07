@@ -30,7 +30,7 @@
 .collectioncards-area {
   display: flex;
   justify-content: center;
-  width: 84%;
+  width: 93%;
   margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@
   flex-wrap: wrap;
   margin: 5rem 0 0 0;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
 }
 
 
@@ -68,6 +68,6 @@
     font-weight: 500;
   }
   .collection-cards {
-    margin: 0 auto;
+    margin: 0;
   }
 }
