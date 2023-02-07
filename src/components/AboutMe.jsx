@@ -27,7 +27,7 @@ export default function AboutMe() {
             </h2>
             <p className="intro-paragraph">
               Hej! Trevligt att träffas!
-              <br />I am Olivia from South Korea. I have stayed Sweden for 5
+              <br />I am Olivia from South Korea. I have stayed Sweden for 6
               months with my Swedish boyfriend. I am an outgoing person who
               likes to communicate with people and share thoughts together. I
               enjoy reading books, cooking and keeping journal in my free time.
