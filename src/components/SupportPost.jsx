@@ -5,7 +5,7 @@ const checkLength = function () {
   const area = document.getElementById("comment-text");
   const message = document.getElementById("textarea-message");
   const maxLength = 80;
-  if (area.value.length < maxLength) {
+  if (area.value.length <= maxLength) {
     message.innerHTML = maxLength - area.value.length + " characters remaining";
   }
 };
