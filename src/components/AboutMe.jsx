@@ -31,7 +31,8 @@ export default function AboutMe() {
               months with my Swedish boyfriend. I am an outgoing person who
               likes to communicate with people and share thoughts together. I
               enjoy reading books, cooking and keeping journal in my free time.
-              Currenly searching a job as a junior Frontend developer in Sweden.
+              Currently searching for a job as a junior Frontend developer in
+              Sweden.
             </p>
             <a
               className="link-arrow"
