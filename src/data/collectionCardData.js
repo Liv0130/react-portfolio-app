@@ -256,7 +256,34 @@ const collectionCardData = [
   },
   {
     id: 10,
-    name: "Statbucks",
+    name: "Sticky memo",
+    video: require("../assets/video/sticky-memo.mp4"),
+    summary: "#React  #Local Storage  #Mob X  #Sass  #Underscore  #Uuid",
+    intro:
+      "Don't have to make your desk dirty anymore! Use our sticky memo instead!",
+    feature: [
+      "Using React",
+      "Utilize Local Storage",
+      "Managing data with Mob X",
+      "Styled with Sass",
+      "Used my own package after publishing",
+    ],
+    detail:
+      "This project is one of React projects to practice various features of React. I could practice using local storage and uuid once again!",
+    github: "https://github.com/Liv0130/react-sticky-memo",
+    image: require("../assets/sticky-memo.png"),
+    imageAlt: "sticky-memo",
+    icon: [
+      require("../assets/react.png"),
+      require("../assets/sass.png"),
+      require("../assets/mobx.png"),
+      require("../assets/emotion.png"),
+    ],
+    iconAlt: "stacks",
+  },
+  {
+    id: 11,
+    name: "Starbucks",
     video: require("../assets/video/starbucks.mp4"),
     summary:
       "#Clone coding project  #Javascript  #Positioning  #CSS  #Youtube iframe",
@@ -283,7 +310,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 11,
+    id: 12,
     name: "Tic Tac Toe",
     video: require("../assets/video/tic-tac-toe.mp4"),
     summary:
@@ -309,7 +336,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 12,
+    id: 13,
     name: "Virtual Keyboard",
     video: require("../assets/video/virtual-keyboard.mp4"),
     summary: "#HTML  #CSS  #Dark mode  #Toggle  #DOM element  #Eslint",
