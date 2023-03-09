@@ -145,8 +145,35 @@ const collectionCardData = [
     ],
     iconAlt: "stacks",
   },
+
   {
     id: 6,
+    name: "Timetable",
+    video: require("../assets/video/timetable.mp4"),
+    summary: "#React  #Recoil  #React-hook-form  #Material-ui  #Local storage",
+    intro: "Make your own timetable and check whenever you need!",
+    feature: [
+      "Practiced React-hook-form and controlled user input",
+      "Used Recoil to manage the state globally",
+      "Used Material-ui to simply build structured website",
+      "Applied the rules through Controller and connected input field to manage it",
+      "Saved user input data in local storage to keep it when we reopen the website",
+    ],
+    detail:
+      "This project was great to practice Material-ui and I could study React-hook-form. and how to use it. Before it was hard for me to understand Recoil but through this time I could get grip on it.",
+    github: "https://github.com/Liv0130/react-timetable-app",
+    image: require("../assets/timetable.png"),
+    imageAlt: "react timetable app",
+    icon: [
+      require("../assets/react.png"),
+      require("../assets/recoil.png"),
+      require("../assets/materialui.png"),
+    ],
+    iconAlt: "stacks",
+  },
+
+  {
+    id: 7,
     name: "Ranked Movie List",
     video: require("../assets/video/react-nomad_movie.mp4"),
     summary:
@@ -172,7 +199,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 7,
+    id: 8,
     name: "To do list",
     video: require("../assets/video/react-todolist.mp4"),
     summary:
@@ -198,7 +225,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 8,
+    id: 9,
     name: "Movie Finder",
     video: require("../assets/video/vue3-movie-app.mp4"),
     summary:
@@ -227,7 +254,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 9,
+    id: 10,
     name: "Find a restaurant",
     video: require("../assets/video/food-app.mp4"),
     summary: "#Node.js  #Uuid  #Ejs  #Nodemon  #Express",
@@ -255,7 +282,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 10,
+    id: 11,
     name: "Sticky memo",
     video: require("../assets/video/sticky-memo.mp4"),
     summary: "#React  #Local Storage  #Mob X  #Sass  #Underscore  #Uuid",
@@ -282,7 +309,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 11,
+    id: 12,
     name: "Starbucks",
     video: require("../assets/video/starbucks.mp4"),
     summary:
@@ -310,7 +337,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 12,
+    id: 13,
     name: "Tic Tac Toe",
     video: require("../assets/video/tic-tac-toe.mp4"),
     summary:
@@ -336,7 +363,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 13,
+    id: 14,
     name: "Virtual Keyboard",
     video: require("../assets/video/virtual-keyboard.mp4"),
     summary: "#HTML  #CSS  #Dark mode  #Toggle  #DOM element  #Eslint",
