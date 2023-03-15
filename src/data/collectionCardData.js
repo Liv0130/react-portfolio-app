@@ -145,9 +145,36 @@ const collectionCardData = [
     ],
     iconAlt: "stacks",
   },
-
   {
     id: 6,
+    name: "Weather Check App",
+    video: require("../assets/video/weather.mp4"),
+    summary:
+      "#React  #React-icons  #Open API  #Material-ui  #Postman  #Context API  #Swiper  #Recharts",
+    intro: "Check Malmö’s weather conveniently with our weather check app!",
+    feature: [
+      "Understood how to use ‘Context API’ and power of it",
+      "Utilised open weather API and only extracted the needed data",
+      "Designed the way how to visualise the data on the app with Recharts",
+      "Used Material-ui to simply build structured website",
+      "Saved the important data on ‘.env’ file",
+    ],
+    detail:
+      "I find using an API to be a stimulating experience as it allows me to exercise control over the presentation of data to users. Additionally, the process of examining the logic of frequently utilized weather check functions proved to be a valuable learning experience.",
+    github: "https://github.com/Liv0130/react-weather-app",
+    image: require("../assets/weather.png"),
+    imageAlt: "react weather app",
+    icon: [
+      require("../assets/react.png"),
+      require("../assets/recharts.png"),
+      require("../assets/postman.png"),
+      require("../assets/materialui.png"),
+      require("../assets/swiper.png"),
+    ],
+    iconAlt: "stacks",
+  },
+  {
+    id: 7,
     name: "Timetable",
     video: require("../assets/video/timetable.mp4"),
     summary: "#React  #Recoil  #React-hook-form  #Material-ui  #Local storage",
@@ -171,9 +198,8 @@ const collectionCardData = [
     ],
     iconAlt: "stacks",
   },
-
   {
-    id: 7,
+    id: 8,
     name: "Ranked Movie List",
     video: require("../assets/video/react-nomad_movie.mp4"),
     summary:
@@ -199,7 +225,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 8,
+    id: 9,
     name: "To do list",
     video: require("../assets/video/react-todolist.mp4"),
     summary:
@@ -225,7 +251,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 9,
+    id: 10,
     name: "Movie Finder",
     video: require("../assets/video/vue3-movie-app.mp4"),
     summary:
@@ -254,7 +280,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 10,
+    id: 11,
     name: "Find a restaurant",
     video: require("../assets/video/food-app.mp4"),
     summary: "#Node.js  #Uuid  #Ejs  #Nodemon  #Express",
@@ -282,7 +308,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 11,
+    id: 12,
     name: "Sticky memo",
     video: require("../assets/video/sticky-memo.mp4"),
     summary: "#React  #Local Storage  #Mob X  #Sass  #Underscore  #Uuid",
@@ -309,7 +335,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 12,
+    id: 13,
     name: "Starbucks",
     video: require("../assets/video/starbucks.mp4"),
     summary:
@@ -337,7 +363,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 13,
+    id: 14,
     name: "Tic Tac Toe",
     video: require("../assets/video/tic-tac-toe.mp4"),
     summary:
@@ -363,7 +389,7 @@ const collectionCardData = [
     iconAlt: "stacks",
   },
   {
-    id: 14,
+    id: 15,
     name: "Virtual Keyboard",
     video: require("../assets/video/virtual-keyboard.mp4"),
     summary: "#HTML  #CSS  #Dark mode  #Toggle  #DOM element  #Eslint",
