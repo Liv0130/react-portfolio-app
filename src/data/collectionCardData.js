@@ -1,5 +1,33 @@
 const collectionCardData = [
   {
+    id: 0,
+    name: "Quiz app for a comapany 'Greencarlane'",
+    video: require("../assets/video/quiz-app.mp4"),
+    summary: "#React  #Redux/toolkit  #sass  #Vite  #Figma  #MongoDB",
+    intro: "Find the best car for our users through this quiz app!",
+    feature: [
+      "Make reusable components with React",
+      "Save each users' answer data in React Store",
+      "Use Redux/toolkit to make Slice and capsulize Reducers and Actions",
+      "Participating in desigining details on Figma",
+      "Connected it to MongoDB for keeping the data safe",
+    ],
+    detail:
+      "During the internship, I made this Quiz app from scratch. It's still in developing process. I am looking forward to connect our own 'EV recommendation engine' by our data scientist team to this Quiz app!",
+    github: "./",
+    image: require("../assets/quiz-app.png"),
+    imageAlt: "greencarlane quiz app",
+    icon: [
+      require("../assets/react.png"),
+      require("../assets/redux.png"),
+      require("../assets/sass.png"),
+      require("../assets/figma.png"),
+      require("../assets/mongodb.png"),
+      require("../assets/vite.png"),
+    ],
+    iconAlt: "stacks",
+  },
+  {
     id: 1,
     name: "Electronics Accessories & Supplies",
     video: require("../assets/video/nodejs-shop.mp4"),
